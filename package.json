@@ -1,14 +1,28 @@
 {
-  "name": "nest-route-generator",
+  "name": "@lordkriegan/nestgen",
   "version": "1.0.0",
-  "description": "",
+  "description": "Quickly scaffold a full NestJS application by providing a json file.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": "lordkriegan/nestgen",
+  "keyword": [
+    "generate",
+    "NestJS",
+    "Express",
+    "cli"
+  ],
+  "author": "Qamar Abbas Stationwala",
   "license": "ISC",
-  "type": "module",
+  "bugs": {
+    "url": "https://github.com/LordKriegan/nestgen/issues"
+  },
+  "homepage": "https://github.com/LordKriegan/nestgen#readme",
+  "bin": {
+    "genkey": "./index.js"
+  },
   "dependencies": {
     "jsonschema": "^1.4.1"
   }

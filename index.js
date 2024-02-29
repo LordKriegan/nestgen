@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { execSync } from 'child_process'
 import commands from './commands.js'
 import { Validator } from 'jsonschema';
@@ -10,7 +11,7 @@ let pathToJson = './appScaffold.json'
 
 const args = process.argv.slice(2)
 if (args[0] === '-h' || args[0] === '--help') {
-    console.log("   Usage: nestgen <relative path to scaffold json file> | <command>")
+    console.log("   Usage: nestgen <relative path to json file> | <command>")
     console.log("   Possible commands include: -h, --help, -v, --version")
     process.exit(0)
 } else if (args[0] === '-v' || args[0] === '--version') {

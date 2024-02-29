@@ -1,0 +1,44 @@
+{
+    "appName": "generatedNestApp",
+    "packageType": "npm",
+    "skipPackageInstallation": true,
+    "children": [{
+        "routePrefix": "api",
+        "routes": [{
+            "requestType": "GET",
+            "routeName": "",
+            "functionName": "basicApiCall",
+            "headers": ["header1", "header2"]
+        }, {
+            "requestType": "GET",
+            "routeName": "health",
+            "functionName": "healthCheck"
+        }],
+        "children": [{
+            "routePrefix": "books",
+            "routes": [{
+                "requestType": "GET",
+                "routeName": "books",
+                "functionName": "books"
+            }, {
+                "requestType": "POST",
+                "routeName": "saveNewBook",
+                "functionName": "saveNewBook",
+                "body": ["body1", "body2"]
+            }]
+        }]
+    }, {
+        "routePrefix": "library",
+        "routes": [{
+            "requestType": "PUT",
+            "routeName": "updateBookData",
+            "functionName": "updateBookData",
+            "query": ["query1", "query2"],
+            "headers": ["HerpHeader"]
+        },{
+            "requestType": "DELETE",
+            "routeName": "destroyBook",
+            "functionName": "destroyBook"
+        }]
+    }]
+}

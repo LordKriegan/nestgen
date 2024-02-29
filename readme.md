@@ -35,4 +35,4 @@ Before running this command, be sure that your json file is formatted properly! 
 }
 ```
 Required fields are marked with a '!!!'
-Please Refer to sample.json as an example.
+Please Refer to [sample.json](sample.json) as an example.

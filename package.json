@@ -1,6 +1,6 @@
 {
   "name": "@lordkriegan/nestgen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quickly scaffold a full NestJS application by providing a json file.",
   "main": "index.js",
   "type": "module",
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/LordKriegan/nestgen#readme",
   "bin": {
-    "genkey": "./index.js"
+    "nestgen": "./index.js"
   },
   "dependencies": {
     "jsonschema": "^1.4.1"

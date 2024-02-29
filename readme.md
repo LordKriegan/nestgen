@@ -15,15 +15,15 @@ Json Format
 Before running this command, be sure that your json file is formatted properly! It should be as follows:
 ```
 {
-    "appName": <string>, //*REQUIRED*
+    "appName": <string>,                                                                     !!!
     "packageType": "npm", | "yarn"
     "skipPackageInstallation": <boolean>,
-    "children": [{ //*REQUIRED*
-        "routePrefix": <string>, //*REQUIRED*
+    "children": [{                                                                           !!!
+        "routePrefix": <string>,                                                             !!!
         "routes": [{
-            "routeName": <string>, //*REQUIRED* (but may be empty string)
-            "functionName": <string>, //*REQUIRED*
-            "requestType": "GET" | "PUT" | "UPDATE" | "DELETE", //*REQUIRED*
+            "routeName": <string>, //while required this field may be an empty string        !!!
+            "functionName": <string>,                                                        !!! 
+            "requestType": "GET" | "PUT" | "UPDATE" | "DELETE",                              !!!
             "headers": [<string>],
             "body": [<string>],
             "query": [<string>],
@@ -34,4 +34,5 @@ Before running this command, be sure that your json file is formatted properly! 
     }]
 }
 ```
+Required fields are marked with a '!!!'
 Please Refer to sample.json as an example.

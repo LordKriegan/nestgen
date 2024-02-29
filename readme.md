@@ -15,15 +15,15 @@ Json Format
 Before running this command, be sure that your json file is formatted properly! It should be as follows:
 ```
 {
-    "appName": <string>,                                                                     !!!
+!!! "appName": <string>,                                                                     
     "packageType": "npm", | "yarn"
     "skipPackageInstallation": <boolean>,
-    "children": [{                                                                           !!!
-        "routePrefix": <string>,                                                             !!!
+!!! "children": [{                                                                           
+!!!     "routePrefix": <string>,                                                             
         "routes": [{
-            "routeName": <string>, //while required this field may be an empty string        !!!
-            "functionName": <string>,                                                        !!! 
-            "requestType": "GET" | "PUT" | "UPDATE" | "DELETE",                              !!!
+!!!         "routeName": <string>, //while required this field may be an empty string        
+!!!         "functionName": <string>,                                                         
+!!!         "requestType": "GET" | "PUT" | "UPDATE" | "DELETE",                              
             "headers": [<string>],
             "body": [<string>],
             "query": [<string>],

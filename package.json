@@ -1,6 +1,6 @@
 {
   "name": "@lordkriegan/nestgen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Quickly scaffold a full NestJS application by providing a json file.",
   "main": "index.js",
   "type": "module",

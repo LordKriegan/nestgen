@@ -4,11 +4,14 @@ Installation
 
 Usage
 ---
-    nestgen <relative path to json file> | <command>
+    nestgen <command>
 
     Possible commands include:
         1. h / --help
         2. v / --version
+        3. p / --path
+    
+    By default, nestgen will look for a file called 'appScaffold.json'. Provide a path using the path command to use another file.
 
 Json Format
 ---

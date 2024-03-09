@@ -19,8 +19,9 @@ if (args[0] === '-h' || args[0] === '--help') {
 } else if (args[0] === '-v' || args[0] === '--version') {
     console.log(`   NestGen v${version}`)
     process.exit(0)
+} else if (args[0] === 'p' || args[0] === '--path') {
+    pathToJson = join(__dirname, args[1])
 }
-else if (args[0]) pathToJson = join(__dirname, args[0])
 
 
 const appData = require(pathToJson)

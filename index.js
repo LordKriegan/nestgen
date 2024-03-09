@@ -37,6 +37,9 @@ if (validation.errors.length) {
 
 let { appName, packageType, skipPackageInstallation, children } = appData;
 appName = appName.toLowerCase();
+packageType = packageType || 'npm';
+skipPackageInstallation = 'skipPackageInstallation' in appData ? skipPackageInstallation : false;
+
 const execute = (command) => {
     execSync(command, { stdio: 'inherit' })
 }

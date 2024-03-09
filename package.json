@@ -1,6 +1,6 @@
 {
   "name": "@lordkriegan/nestgen",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Quickly scaffold a full NestJS application by providing a json file.",
   "main": "index.js",
   "type": "module",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "lordkriegan/nestgen",
-  "keyword": [
+  "keywords": [
     "generate",
     "NestJS",
     "Express",

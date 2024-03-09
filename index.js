@@ -8,8 +8,8 @@ import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 const require = createRequire(import.meta.url);
 const { version } = require('./package.json')
-const __dirname = import.meta.dirname;
-let pathToJson = join(__dirname, './appScaffold.json')
+const cwd = process.cwd()
+let pathToJson = join(cwd, './appScaffold.json')
 
 const args = process.argv.slice(2)
 if (args[0] === '-h' || args[0] === '--help') {
@@ -20,7 +20,7 @@ if (args[0] === '-h' || args[0] === '--help') {
     console.log(`   NestGen v${version}`)
     process.exit(0)
 } else if (args[0] === 'p' || args[0] === '--path') {
-    pathToJson = join(__dirname, args[1])
+    pathToJson = join(cwd, args[1])
 }
 
 
